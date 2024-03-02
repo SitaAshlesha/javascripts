@@ -1,0 +1,22 @@
+<html>
+    <head>Digital Clock</head>
+    <body>
+        <h1 id ="dc"></h1>
+    
+       <script>
+        function showtime()
+        {
+           let date = new Date();
+           let h = date.getHours();
+           let m = date.getMinutes();
+           let s = date.getSeconds();
+           let time = h+" : "+m+" :"+s;
+           document.getElementById("dc").innerHTML=time;
+           setTimeout(showtime,1000);
+            
+        }
+        
+        showtime();
+      </script>
+    </body>
+    </html>
